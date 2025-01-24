@@ -85,47 +85,47 @@ body {
   }
 
  /* BackGround das células */
-  .livro {
+  #livro {
     background-image: url(./img/livro.png);
   }
 
-  .faculdade{
+  #faculdade{
     background-image: url(./img/faculdade.png);
   }
 
-  .almoco{
+  #almoco{
     background-image: url(./img/almoco.png);
   }
 
-  .cafe{
+  #cafe{
     background-image: url(./img/cafe.png);
   }
 
-  .casa{
+  #casa{
     background-image: url(./img/casa.png);
   }
 
-  .igreja{
+  #igreja{
     background-image: url(./img/igreja.png);
   }
 
-  .livre{
+  #livre{
     background-image: url(./img/livre.png);
   }
 
-  .devquest{
+  #devquest{
     background-image: url(./img/devquest.png);
   }
 
-  .academia{
+  #academia{
     background-image: url(./img/academia.png);
   }
 
-  .codecademy{
+  #codecademy{
     background-image: url(./img/codecademy.png);
   }
 
-  .voltar{
+  #voltar{
     background-image: url(./img/voltar.png);
   }
 
