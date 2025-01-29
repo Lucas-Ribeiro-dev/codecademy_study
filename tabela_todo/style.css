@@ -1,19 +1,40 @@
 body {
     background-color: #242f44;
     color: white;
-      font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
   }
   
   header {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 0px;
+
   }
+  
+  /* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #242f44;
+    text-align: center;
+    padding: 0; /* Remove qualquer padding extra */
+    /* margin: 0;  /* Remove qualquer margem extra */
+    /* height: auto; Deixa o header apenas do tamanho do conteúdo */ 
+/* }  */
+
+/* header h1 { */
+    /* margin: 0;  Remove margens externas */
+    /* padding: 10px 0; Ajuste fino para espaçamento interno */
+    /* font-size: 24px; Ajuste o tamanho da fonte se estiver muito grande */
+    /* line-height: 1; Garante que não fique maior do que o necessário */
+/* } */
 
   h1 {
     font-size: 36px;
     padding: 15px;
     color: #8c6b48;
     background-color: white;
+    margin: 0;
   }
   
   h2 {
