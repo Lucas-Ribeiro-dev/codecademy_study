@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS CheatSheet - Selectors & Specificity </title>
+</head>
+<body>
+    <h1>Selectors & Specificity in CSS</h1>
+
+    <!-- Specificity -->
+    <h2>Specificity Levels</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Specificity Code</th>
+                        <th>Numeric Value</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>1.0.0.0</span></td>
+                        <td><span>1000</span></td>
+                        <td>Inline styles (e.g., style="color: red;") – The highest specificity, overrides all other styles unless !important is used elsewhere.</td>
+                    </tr>
+                    <tr>
+                        <td><span>0.1.0.0</span></td>
+                        <td><span>100</span></td>
+                        <td>ID selectors (e.g., #myID) – Stronger than class and element selectors, but weaker than inline styles.</td>
+                    </tr>
+                    <tr>
+                        <td><span>0.0.1.0</span></td>
+                        <td><span>10</span></td>
+                        <td>Class, attribute, and pseudo-class selectors (e.g., .button, [type="text"], :hover) – Applied when no ID or inline styles are present.</td>
+                    </tr>
+                    <tr>
+                        <td>0.0.0.1</td>
+                        <td>1</td>
+                        <td>Element and pseudo-element selectors (e.g., div, h1, ::before) – The lowest specificity, overridden by class, ID, or inline styles.</td>
+                    </tr>
+                    <tr>
+                        <td>0.0.0.0</td>
+                        <td>0</td>
+                        <td>Universal selector (*), combinators (>, +, ~), and pseudo-elements in some cases – No direct specificity, only applies when nothing stronger is present.</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+
+    <!--Basic Selector-->
+    <h2>Basic Selectors</h2>  
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Specificity Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>*</span></td>
+                        <td>Universal selector, selects all elements</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>element (e.g., div, h1, ::before)</td>
+                        <td>Type selector, selects all elements of the given type</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>Selects elements with a specific class</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>Selects an element with a specific ID</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>[attr]</td>
+                        <td>Selects elements with a specific attribute</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+
+    <h2>Pseudo-elements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Specificity Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>::before</td>
+                        <td>Inserts content before an element</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>::after</td>
+                        <td>Inserts content after an element</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>::first-letter</td>
+                        <td>Selects first letter of text</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>::selection</td>
+                        <td>Selects text when highlighted</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+
+    <h2>Pseudo-classes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Specificity Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>:hover</td>
+                        <td>Selects an element when hovered</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>:nth-child(n)</td>
+                        <td>Selects nth child of a parent</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>:first-child</td>
+                        <td>Selects first child of a parent</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>:focus</td>
+                        <td>Selects an element when focused</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+
+    <h2>At-Rules</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Specificity Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@import</td>
+                        <td>Import external CSS file</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>@media</td>
+                        <td>Defines responsive styles for different screen sizes</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>@keyframes</td>
+                        <td>Defines CSS animations</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>@font-face</td>
+                        <td>Defines custom fonts</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+
+</body>
+</html>
