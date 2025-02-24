@@ -1,0 +1,151 @@
+/* Fonts */
+/* Roboto Condensed - Used on subheadings */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Noto Sans - Used on h1 titles */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(resources/fonts/NotoSans-VariableFont_wdth,wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(resources/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: italic;
+}
+/* Ubuntu - used on paragraphs*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* General Container Styles */
+.container {
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 70%;
+    height: auto;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+/* Colors Section */
+.color-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.container h2 {
+    margin-left: 7px;
+}
+
+.color-panel {
+    text-align: center;
+    margin: 7px;
+}
+
+/* Color boxes backgorund */
+
+#sky-blue {
+    color: azure;
+    background-color: #0D1B2A;
+}
+
+#ocean-blue {
+    color: azure;
+    background-color: #1B263B;
+}
+
+#blue {
+    color: azure;
+    background-color: #415A77;
+}
+
+#light-blue {
+    color: azure;
+    background-color: #778DA9;
+}
+
+#ice-beige {
+
+    background-color: #E0E1DD;
+}
+
+/* Fonts Section */
+.fonts-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 7px;
+}
+
+.font-panel {
+    font-size: small;
+    line-height: 5px;
+}
+
+.font-panel h4 {
+    line-height: 10px;
+    text-decoration: underline;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.normal-font {
+    font-style: normal;
+}
+
+.bold-font {
+    font-weight: 900;
+}
+
+.italic-font {
+    font-style: italic;
+}
+
+/* apply font families */
+#roboto-condensed {
+    font-family: 'Roboto Condensed';
+}
+#noto-sans {
+    font-family: 'Noto Sans';
+}
+#ubuntu {
+    font-family: 'Ubuntu';
+}
+
+/* Text Styles Section */
+.text-stl-container h1 {
+    text-align: left;
+    margin: 7px;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Noto Sans';
+
+}
+
+.text-stl-container h2 {
+    margin: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Roboto Condensed';
+}
+
+.text-stl-container p {
+    margin: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+}
+
+.text-stl-container ul {
+    font-size: 14px;
+}
+
+
+
+
