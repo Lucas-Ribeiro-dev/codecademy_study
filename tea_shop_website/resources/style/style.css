@@ -1,14 +1,11 @@
-* {
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
-    background-color: rgba(0, 0, 0, 1);
-    opacity: 0.9;
-}
-
-body {
     margin-left: 20px;
     justify-items: center;
+    background-color: black;
+    opacity: 0.9;
 }
 
 /* header */
@@ -21,10 +18,16 @@ nav {
     width: 100%;
     max-height: 69px;
     top: 0;
+    left: 0;
     padding: 10px;
     border-bottom: 1px solid seashell;
     z-index: 1000;
+    background-color: rgba(0, 0, 0, 1);
     
+}
+
+img {
+    opacity: 0.7;
 }
 
 .logo_container {
@@ -59,27 +62,105 @@ nav {
 
 /* Our Mission Section */
 .mission_section {
+    position: relative;
     margin-top: 69px;
     height: 700px;
     width: 1200px;
 }
 
-.mission_description {
-    background-color: black;
-    opacity: 1;
-    justify-content: center;
+.mission_section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
+.mission_description {
+    /* I've got some help from chatgpt at this point on how to apply this "relative" and "absolute" positions to center the text on the image. And also learned about this transform: translate property */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+    text-align: center;
+}
 
+/* Tea of the Month Section */
+.month_tea_section {
+    width: 1000px;
+    text-align: center;
+    margin: 100px auto;
+}
 
-
+.month_tea_container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* Tea of The Month image boxes */
 .tea_content {
     justify-items: center;
+    margin: 10px;
 }
 .tea_content img {
     height: 200px;
     width: 300px;
+}
+
+.tea_content figcaption {
+    margin-top: 10px;
+}
+
+/* Location sections */
+/* Just repeated the same process I've learned on the previous section. Just made the needed changes... */
+.location-section {
+    position: relative;
+    width: 1200px;
+    height: 500px;
+}
+
+.location-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.location-content h2 {
+    margin-bottom: 15px;
+}
+.location-containers {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.location-box {
+    background-color: black;
+    opacity: 1;
+    margin-top: 0;
+    width: 300px;
+}
+
+
+
+#footer {
+    height: 200px;
+    text-align: center;
+}
+#footer h2 {
+    margin-bottom: 20px;
+}
+
+#copyright {
+    width: 100%;
 }
