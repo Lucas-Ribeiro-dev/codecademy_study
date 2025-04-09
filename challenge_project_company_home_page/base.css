@@ -1,0 +1,47 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* MAIN */
+html {
+    font-size: 18px;
+    display: block;
+}
+body {
+    max-width: 1500px;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    justify-self: center;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Lora', serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'roboto';
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 3% 0;
+    padding: 0;
+    color: #555;
+}
+
+#products, #about {
+    margin-bottom: 60px;
+}
