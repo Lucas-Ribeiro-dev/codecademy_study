@@ -1,0 +1,290 @@
+body {
+    margin-top: 150px;
+}
+
+/* Header and NAV */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    gap: 2.3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+header li {
+    list-style: none;
+}
+/* logo */
+.logo {
+    width: 30%;
+    max-width: 200px;
+    max-height: 100px;
+
+}
+.logo-name {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+nav li {
+    padding: 0;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+}
+/* Addapt nav items and font size to screen shrink */
+@media only screen and (max-width: 850px) {
+    nav ul {
+        gap: 3rem;
+        transition: all 0.5s ease;
+
+    }
+    nav li {
+        font-size: 1.2em;
+        transition: all 0.5s ease;
+    }
+}
+
+/* Banner section */
+#main-banner {
+    height: 43rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.banner-text-box {
+    align-self: center;
+    position: relative;
+    left: 10%;
+    background-color: #0099DB;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Addapt banner text to screen shrink */
+@media only screen and (max-width: 1070px) {
+    .banner-text {
+        transform: translate(-35%, -50%);
+        transition: all 0.5s ease-in-out;
+    }
+} /* end of media querry */
+
+.banner-text-box h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+.banner-paragraph {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2em;
+}
+.slogan {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+/* Hockey Category Divisions */
+#categories {
+    margin-bottom: 60px;
+    padding: 2rem;
+}
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.category-box {
+    width: 30%;
+    height: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.category-text {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* About us */
+#about-us {
+    background-color: #0099DB;
+    padding: 6rem;
+}
+.about-us-content-container {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.about-us-paragraph-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+    text-align: center;
+    gap: 2rem;
+}
+.about-us-paragraph-box {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 2rem;
+    border-radius: 1rem;
+    line-height: 1.5em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Hockey School */
+#hockey-school {
+    max-width: 1000px;
+    margin: 50px auto 100px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.young-adult-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+.kids-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hockey-school-item {
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+
+/* Events */
+#events {
+    background-color: rgba(0, 153, 219,0.2);
+    padding: 1rem 6rem;
+    text-align: center;
+}
+
+.events-banner-container {
+    box-sizing: border-box;
+    width: 90%;
+    min-height: 500px;
+    justify-self: center;
+    
+
+    /* placeholder img */
+    /* background-image: url(/resources/img/placeholder/1000x1000.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.events-post-box-text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    max-width: 100%;
+    min-height: 500px;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+
+}
+.events-post-box-text h3 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+.events-post-box-text p {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+
+}
+/* Contact */
+#contact {
+    padding: 6rem;
+}
+/* This container highlights the entire content in a box  */
+.contact-content-container {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 2rem;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* This container holds the map and the options */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+/* Container for social media and contact options*/
+.contact-options-container {
+    text-align: center;
+}
+/* Phone number and email container */
+.tel-email {
+    font-size: 18px;
+}
+.tel-email h3, .social-media h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
+}
+.tel-email p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    margin-bottom: 1em;
+}
+/* Social media logos */
+.sm-icons {
+    display: flex;
+    overflow: hidden;
+    width: 50%;
+    justify-self: center;
+    gap: 5%;
+    justify-content: center;
+}
+.sm-icons img {
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+/* MAPS */

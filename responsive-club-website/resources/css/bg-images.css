@@ -1,0 +1,53 @@
+#main-banner {
+    background-image: url(/resources/img/pictures/banner.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hockey categories */
+#ice-hockey-bg {
+    background-image: url(/resources/img/pictures/ice-hockey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#roller-hockey-bg {
+    background-image: url(/resources/img/pictures/roller-hockey.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hockey School */
+#hs-adult {
+    background-image: url(/resources/img/pictures/adult-hockey.jpeg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+#hs-young {
+    background-image: url(/resources/img/pictures/young-hockey.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 3;
+}
+#hs-kids {
+    background-image: url(/resources/img/pictures/kids-hockey.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+/* EVENTS */
+
+#tournament-bg {
+    background-image: url(/resources/img/pictures/adult-hockey.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
