@@ -1,0 +1,89 @@
+
+body {
+    justify-self: center;
+    width: 1000px;
+    text-align: center;
+    margin-top: 70px;
+
+}
+h1 {
+    margin-top: 0;
+}
+#user {
+    margin-top: 60px;
+}
+
+#result {
+    margin-top: 50px;
+}
+#result h3 {
+    font-size: 1.4rem;
+}
+p {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+.user-choice {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #000;
+  border-radius: 7px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.user-choice::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #333;
+  z-index: -1;
+}
+
+.user-choice:hover,
+.user-choice:focus {
+  color: #fff;
+}
+
+.user-choice:hover::before,
+.user-choice:focus::before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.user-choice:active {
+  transform: scale(0.9);
+}
